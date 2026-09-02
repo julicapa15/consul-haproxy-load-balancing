@@ -1,0 +1,17 @@
+config:
+  target: "http://192.168.100.10"
+  phases:
+    - duration: 20
+      arrivalRate: 5
+      name: "Calentamiento"
+    - duration: 40
+      arrivalRate: 20
+      name: "Carga sostenida"
+    - duration: 20
+      arrivalRate: 50
+      name: "Pico de trafico"
+scenarios:
+  - name: "Peticion web"
+    flow:
+      - get:
+          url: "/"
