@@ -1,6 +1,18 @@
+<div align="center">
+
 # Load Balancing with Service Discovery: Consul + HAProxy + Artillery
 
+[![Vagrant](https://img.shields.io/badge/Vagrant-provisioning-1868F2?logo=vagrant&logoColor=white)](https://www.vagrantup.com/)
+[![VirtualBox](https://img.shields.io/badge/VirtualBox-VMs-183A61?logo=virtualbox&logoColor=white)](https://www.virtualbox.org/)
+[![Ubuntu](https://img.shields.io/badge/Ubuntu-22.04-E95420?logo=ubuntu&logoColor=white)](https://ubuntu.com/)
+[![Consul](https://img.shields.io/badge/Consul-service_discovery-F24C53?logo=consul&logoColor=white)](https://www.consul.io/)
+[![HAProxy](https://img.shields.io/badge/HAProxy-load_balancer-106DA9)](https://www.haproxy.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-20-5FA04E?logo=nodedotjs&logoColor=white)](https://nodejs.org/)
+[![Artillery](https://img.shields.io/badge/Artillery-load_testing-CC0033)](https://www.artillery.io/)
+
 *[Leer en español](README.es.md)*
+
+</div>
 
 Infrastructure project that provisions a three-VM cluster with Vagrant, in which a HashiCorp Consul cluster keeps track of the running Node.js web services while an HAProxy load balancer regenerates its own configuration from Consul's service catalog through consul-template. The setup covers round-robin balancing, health checks that take failed instances out of rotation, a custom 503 page when no backend is available and scaling without manual changes, and it was validated with Artillery load tests.
 
