@@ -1,1 +1,0 @@
-Practica 1 - Ambiente de trabajo Vagrant
