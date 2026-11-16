@@ -1,6 +1,18 @@
+<div align="center">
+
 # Microproyecto 1 — Cluster Consul + Balanceo HAProxy + Artillery
 
+[![Vagrant](https://img.shields.io/badge/Vagrant-provisioning-1868F2?logo=vagrant&logoColor=white)](https://www.vagrantup.com/)
+[![VirtualBox](https://img.shields.io/badge/VirtualBox-VMs-183A61?logo=virtualbox&logoColor=white)](https://www.virtualbox.org/)
+[![Ubuntu](https://img.shields.io/badge/Ubuntu-22.04-E95420?logo=ubuntu&logoColor=white)](https://ubuntu.com/)
+[![Consul](https://img.shields.io/badge/Consul-service_discovery-F24C53?logo=consul&logoColor=white)](https://www.consul.io/)
+[![HAProxy](https://img.shields.io/badge/HAProxy-load_balancer-106DA9)](https://www.haproxy.org/)
+[![Node.js](https://img.shields.io/badge/Node.js-20-5FA04E?logo=nodedotjs&logoColor=white)](https://nodejs.org/)
+[![Artillery](https://img.shields.io/badge/Artillery-load_testing-CC0033)](https://www.artillery.io/)
+
 *[Read in English](README.md)*
+
+</div>
 
 Service mesh con **HashiCorp Consul**, balanceo de carga con **HAProxy** integrado a Consul
 mediante **consul-template** (service discovery), y pruebas de carga con **Artillery**.
